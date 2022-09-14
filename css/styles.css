@@ -1,0 +1,47 @@
+/* CSS files add styling rules to your content */
+
+body {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  background: #9a9a9a;
+}
+
+#renderCanvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline: #9a9a9a;
+}
+
+#footer {
+  position: fixed;
+  top: 5px;
+  width: 100%;
+}
+
+button {
+  background-color: #1b95e0;
+  border: none;
+  border-radius: 3px;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.7em;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  padding: 4px 6px;
+  margin: 0px 1px;
+}
+
+button:hover {
+  background-color: #0c7abf;
+}
+
+.flex-box{
+  display:flex;
+  outline: none;
+}
