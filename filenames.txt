@@ -1,8 +1,0 @@
-let scenes_root = "https://cdn.glitch.com/";
-let sp = "b12df82c-ed15-473a-b9aa-f1ccd97600ac%2F";
-// Generate large target filenames
-var scene = createScene(engine,sp+"Eat_", ".glb?v=1610559236379", 2, 99, 10);
-// Generate small target filenames
-var scene = createScene(engine,sp+"smalltarget_",".glb?v=1622731537462",1,103,10);
-// Generate the macropinosome filenames
-var scene = createScene(engine,sp+"surface_",".glb?v=1622674058437",1,100,10);
