@@ -1,6 +1,8 @@
 // This is needed to run in Glitch.
 //npm install --save babylonjs babylonjs-loaders babylonjs-gui
 import "./styles/styles.css"
+import "./components/NavBar"
+import "./components/Footer"
 import { createScene } from "./js/modules/createScene.js";
 
 let domain = "https://cdn.glitch.me/"

@@ -1,8 +1,9 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+// const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ReactRefreshWebpackPlugin = require('react-refresh-webpack-plugin');
+const ReactRefreshWebpackPlugin = require("react-refresh-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 let mode = "development";
 let target = "web";
@@ -11,6 +12,11 @@ const plugins = [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
         template: "./src/index.html",
+    }),
+    new CopyWebpackPlugin({
+        patterns: [
+            { from: './src/images', to: '' },
+        ],
     }),
 ];
 
@@ -58,7 +64,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/i,
+                test: /\.(png|jpe?g|gif|svg|ico)$/i,
                 /**
                  * The `type` setting replaces the need for "url-loader"
                  * and "file-loader" in Webpack 5.
